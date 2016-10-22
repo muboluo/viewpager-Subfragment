@@ -115,17 +115,7 @@ public abstract class FragmentHiddenPagerAdapter extends PagerAdapter {
         }
 
     }
-
-
-    public Fragment getFragment(int position) {
-
-        if (position >= 0 && position < mFragments.size()) {
-            Fragment f = mFragments.get(position);
-            return f;
-        }
-        return null;
-    }
-
+    
     @Override
     public void setPrimaryItem(ViewGroup container, int position, Object object) {
         Fragment fragment = (Fragment) object;
