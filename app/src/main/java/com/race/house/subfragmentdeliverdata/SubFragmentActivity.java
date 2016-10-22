@@ -77,7 +77,7 @@ public class SubFragmentActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            Fragment fragment = super.getFragment(position);
+            Fragment fragment = super.getItem(position);
 
             if (fragment == null) {
                 fragment = mfragments.get(position);
